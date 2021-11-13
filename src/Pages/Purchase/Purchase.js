@@ -13,7 +13,7 @@ const Purchase = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://sheltered-citadel-18742.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -21,14 +21,16 @@ const Purchase = () => {
   // Form Functionality
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/orders", data).then((res) => {
-      //  Showing alert
-      if (res.data.insertedId) {
-        alert("Purchase History Recorded");
-        //   Form resetting
-        reset();
-      }
-    });
+    axios
+      .post("https://sheltered-citadel-18742.herokuapp.com/orders", data)
+      .then((res) => {
+        //  Showing alert
+        if (res.data.insertedId) {
+          alert("Purchase History Recorded");
+          //   Form resetting
+          reset();
+        }
+      });
   };
 
   return (

@@ -18,7 +18,7 @@ const Motto = () => {
         <div className="col-sm-8 bg-success text-white">
           <div className="text-center p-5">
             <h1 className="animate__animated animate__bounceInDown">
-              <i class="fas fa-2x fa-dove text-warning"></i> Falcons Eye
+              <i className="fas fa-2x fa-dove text-warning"></i> Falcons Eye
             </h1>
           </div>
           <h3 className="animate__animated animate__rubberBand text-center p-5">

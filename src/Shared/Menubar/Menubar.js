@@ -10,7 +10,7 @@ const Menubar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid px-5">
             <a className="navbar-brand text-warning brand-logo" href="/">
-              <i class="fas fa-2x fa-dove"></i> Falcons Eye
+              <i className="fas fa-2x fa-dove"></i> Falcons Eye
             </a>
             <button
               className="navbar-toggler"
@@ -48,7 +48,7 @@ const Menubar = () => {
                 {user?.email && (
                   <li className="nav-item">
                     <small className="nav-link fs-5 text-info">
-                      <i class="far fa-user me-2"></i>
+                      <i className="far fa-user me-2"></i>
                       {user.displayName}
                     </small>
                   </li>

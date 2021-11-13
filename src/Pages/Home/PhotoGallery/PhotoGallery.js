@@ -13,7 +13,7 @@ const PhotoGallery = () => {
   return (
     <>
       <h1 className="text-center m-auto text-secondary pt-5">
-        <i class="fas fa-2x text-info fa-camera"></i> Valuable Click from{" "}
+        <i className="fas fa-2x text-info fa-camera"></i> Valuable Click from{" "}
         <span className="text-success">Our Clients</span> ___
       </h1>
       <div className="p-5 m-auto row g-0 photo-grid">

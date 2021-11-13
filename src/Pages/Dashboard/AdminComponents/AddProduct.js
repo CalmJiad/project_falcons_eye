@@ -7,14 +7,16 @@ const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/products", data).then((res) => {
-      //  Showing alert
-      if (res.data.insertedId) {
-        alert("New Bird Added Successfully");
-        //   Form resetting
-        reset();
-      }
-    });
+    axios
+      .post("https://sheltered-citadel-18742.herokuapp.com/products", data)
+      .then((res) => {
+        //  Showing alert
+        if (res.data.insertedId) {
+          alert("New Bird Added Successfully");
+          //   Form resetting
+          reset();
+        }
+      });
   };
 
   return (

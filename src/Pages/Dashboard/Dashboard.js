@@ -24,7 +24,7 @@ const Dashboard = () => {
         <div style={{ height: "150vh" }} className="col-md-2 p-4 bg-success">
           <Link to="/explore">
             <button className="btn btn-link fs-6 text-decoration-none text-white">
-              <i class="fas fa-home"></i> Explore
+              <i className="fas fa-home"></i> Explore
             </button>
           </Link>
           {/* Admins Options */}
@@ -32,22 +32,22 @@ const Dashboard = () => {
             <>
               <Link to={`${url}/makeadmin`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="fas fa-user-cog"></i> Make Admin
+                  <i className="fas fa-user-cog"></i> Make Admin
                 </button>
               </Link>
               <Link to={`${url}/manageorders`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="far fa-list-alt"></i> Manage Orders
+                  <i className="far fa-list-alt"></i> Manage Orders
                 </button>
               </Link>
               <Link to={`${url}/manageproducts`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="fas fa-list-ol"></i> Manage Products
+                  <i className="fas fa-list-ol"></i> Manage Products
                 </button>
               </Link>
               <Link to={`${url}/addproduct`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="far fa-calendar-plus"></i> Add Product
+                  <i className="far fa-calendar-plus"></i> Add Product
                 </button>
               </Link>
             </>
@@ -55,17 +55,17 @@ const Dashboard = () => {
             <>
               <Link to={`${url}/pay`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="fas fa-shopping-cart"></i> Payment
+                  <i className="fas fa-shopping-cart"></i> Payment
                 </button>
               </Link>
               <Link to={`${url}/myorders`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="fas fa-list-ol"></i> My Orders
+                  <i className="fas fa-list-ol"></i> My Orders
                 </button>
               </Link>
               <Link to={`${url}/review`}>
                 <button className="btn btn-link fs-6 text-decoration-none text-white">
-                  <i class="far fa-comment-alt"></i> Review
+                  <i className="far fa-comment-alt"></i> Review
                 </button>
               </Link>
             </>
@@ -74,14 +74,14 @@ const Dashboard = () => {
             onClick={logout}
             className="btn btn-link fs-6 text-decoration-none text-white"
           >
-            <i class="fas fa-sign-out-alt"></i> Log Out
+            <i className="fas fa-sign-out-alt"></i> Log Out
           </button>
         </div>
         <div className="col-md-10 container-fluid">
           <Switch>
             <Route exact path={path}>
               <h2 className="mt-4 text-center">
-                <i class="far fa-calendar-check"></i> Welcome to your{" "}
+                <i className="far fa-calendar-check"></i> Welcome to your{" "}
                 <span className="text-success">Dashboard</span>
               </h2>
               <h5 className="pt-3 text-center">

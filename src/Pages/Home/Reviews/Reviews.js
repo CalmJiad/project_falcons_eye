@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://sheltered-citadel-18742.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
@@ -16,14 +16,14 @@ const Reviews = () => {
       <div className="row my-5">
         {reviews.map((review) => (
           <div key={review?._id} className="col-md-6 mb-5">
-            <div class="card shadow">
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
+            <div className="card shadow">
+              <div className="card-body">
+                <blockquote className="blockquote mb-0">
                   <p>
-                    <i class="fas fa-2x fa-quote-left text-secondary"></i>{" "}
+                    <i className="fas fa-2x fa-quote-left text-secondary"></i>{" "}
                     {review?.comment}
                   </p>
-                  <footer class="blockquote-footer mt-3">
+                  <footer className="blockquote-footer mt-3">
                     {review?.userName}
                     {/* <cite title="Source Title">Source Title</cite> */}
                   </footer>

@@ -10,7 +10,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("http://localhost:5000/users", {
+    fetch("https://sheltered-citadel-18742.herokuapp.com/users", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -35,26 +35,26 @@ const MakeAdmin = () => {
       </h2>
       <div className="w-50 m-auto">
         <form onSubmit={handleAdminSubmit}>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">
+          <div className="mb-3">
+            <label htmlFor="exampleInputEmail1" className="form-label">
               User Email
             </label>
             <input
               type="email"
               onBlur={handleOnBlur}
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               required
             />
           </div>
 
-          <button type="submit" class="btn btn-success px-4">
+          <button type="submit" className="btn btn-success px-4">
             Make Admin
           </button>
           {success && (
-            <div class="alert alert-success mt-3" role="alert">
-              <i class="far fa-check-circle me-2"></i> Admin created
+            <div className="alert alert-success mt-3" role="alert">
+              <i className="far fa-check-circle me-2"></i> Admin created
               successfully!
             </div>
           )}

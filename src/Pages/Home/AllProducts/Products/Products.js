@@ -5,7 +5,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://sheltered-citadel-18742.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className="py-5">
       <h1 className="text-center my-5">
-        <i class="fab fa-2x text-primary fa-phoenix-squadron"></i> Birds we
+        <i className="fab fa-2x text-primary fa-phoenix-squadron"></i> Birds we
         owned <span className="text-info">to serve</span>
         ___
       </h1>

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AuthProvider from "./Context/AuthProvider/AuthProvider";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Explore from "./Pages/Explore/Explore";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login";
@@ -36,6 +37,9 @@ function App() {
             <PrivateRoute path="/products/:id">
               <Purchase></Purchase>
             </PrivateRoute>
+            <Route path="*">
+              <ErrorPage></ErrorPage>
+            </Route>
           </Switch>
         </Router>
       </AuthProvider>

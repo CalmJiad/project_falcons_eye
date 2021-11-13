@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-md-4 p-5 footer-part">
             <div>
               <p className="fs-5 text-warning">
-                <i class="fas fa-2x fa-dove"></i> Falcons Eye <br />{" "}
+                <i className="fas fa-2x fa-dove"></i> Falcons Eye <br />{" "}
                 <small className="lead brand">
                   # capturing the future for you
                 </small>
